@@ -11,3 +11,16 @@ C:\Users\ursin\Desktop\m121rechner\m121rechner\obj\Debug\netcoreapp3.1\m121rechn
 C:\Users\ursin\Desktop\m121rechner\m121rechner\obj\Debug\netcoreapp3.1\m121rechner.pdb
 C:\Users\ursin\Desktop\m121rechner\m121rechner\obj\Debug\netcoreapp3.1\m121rechner.genruntimeconfig.cache
 C:\Users\ursin\Desktop\m121rechner\m121rechner\obj\Debug\netcoreapp3.1\m121rechner.csprojAssemblyReference.cache
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\bin\Debug\netcoreapp3.1\m121rechner.exe
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\bin\Debug\netcoreapp3.1\m121rechner.deps.json
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\bin\Debug\netcoreapp3.1\m121rechner.runtimeconfig.json
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\bin\Debug\netcoreapp3.1\m121rechner.runtimeconfig.dev.json
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\bin\Debug\netcoreapp3.1\m121rechner.dll
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\bin\Debug\netcoreapp3.1\m121rechner.pdb
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\obj\Debug\netcoreapp3.1\m121rechner.csprojAssemblyReference.cache
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\obj\Debug\netcoreapp3.1\m121rechner.AssemblyInfoInputs.cache
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\obj\Debug\netcoreapp3.1\m121rechner.AssemblyInfo.cs
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\obj\Debug\netcoreapp3.1\m121rechner.csproj.CoreCompileInputs.cache
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\obj\Debug\netcoreapp3.1\m121rechner.dll
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\obj\Debug\netcoreapp3.1\m121rechner.pdb
+C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\obj\Debug\netcoreapp3.1\m121rechner.genruntimeconfig.cache

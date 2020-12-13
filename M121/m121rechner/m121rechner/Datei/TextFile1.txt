@@ -1,0 +1,91 @@
+﻿using System;
+using System.Text.RegularExpressions;
+
+namespace m121rechner
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string vorzahlen = System.IO.File.ReadAllText(@"C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\Datei\Rand1000001.txt");
+            int leser = 0;
+            char[] zahlen = vorzahlen.ToCharArray();
+            double summe = 0;
+            double zahl = 0;
+            int stelle = 10;
+            int nachkommastelle = 0;
+            int vorzeichen = 1;
+            int vorkomma = 1;
+            int max = 0;
+            int[] zahlenspeicher = new int[20];
+            Regex _regex = new Regex(@"\-");
+
+            while (leser <= vorzahlen.Length - 1)
+            {
+                string zeichen = vorzahlen[leser].ToString();
+                switch (zeichen)
+                {
+                    case var someVal when new Regex(@"[\-]").IsMatch(someVal.ToString()):
+                        {
+                            vorzeichen = -1;
+                            leser++;
+                            break;
+                        }
+                    case var someVal when new Regex(@"[\.]").IsMatch(someVal.ToString()):
+                        {
+                            vorkomma = 0;
+                            leser++;
+                            break;
+                        }
+
+                    case var someVal when new Regex(@"[\,]").IsMatch(someVal.ToString()):
+                        {
+                            stelle = 10;
+                            vorkomma = 1;
+                            summe += zahl * vorzeichen;
+                            zahl = 0;
+                            vorzeichen = 1;
+                            leser++;
+                            if (nachkommastelle > max)
+                            {
+                                max = nachkommastelle;
+                            }
+                            if (leser % 1000 == 0) {
+                                Console.WriteLine("checkpoint");
+                                    }
+                            if (leser % 10000 == 0)
+                            {
+                                Console.WriteLine("10000");
+                            }
+                            nachkommastelle = 0;
+                            break;
+                        }
+                    case var someVal when new Regex(@"[0-9]").IsMatch(someVal.ToString()):
+                {
+                            int gibzahl = Int32.Parse(zeichen);
+                            if (vorkomma == 1)
+                            {
+                                
+                                zahl *= 10;
+                                zahl += gibzahl;
+                                leser++;
+
+                            }
+                            else
+                            {
+                                zahlenspeicher[nachkommastelle] += gibzahl;
+                                nachkommastelle ++;
+                                leser++;
+                            }
+                            break;
+                        }
+
+                    default:
+                        leser++;
+                        break;
+                }
+            }
+            Console.WriteLine(summe);
+        }
+    }
+}

@@ -7,44 +7,14 @@ namespace m121rechner
     {
         static void Main(string[] args)
         {
-            string zahlen = System.IO.File.ReadAllText(@"C:\Users\ursin\Desktop\m121rechner\m121rechner\Datei\Rand1000001.txt");
-            int leser = 0;
+            string vorzahlen = System.IO.File.ReadAllText(@"C:\Users\ursin\Desktop\GIBZ\Gibzcode\GibzAufgaben\M121\m121rechner\m121rechner\Datei\Rand1000001.txt");
+            string[] zahlen = vorzahlen.Split(",");
             double summe = 0;
-            double zahl = 0;
-            int stelle = 10;
-            int vorzeichen = 1;
-            int vorkomma = 1;
-            while(leser <= zahlen.Length - 1)
+            foreach(string str in zahlen)
             {
-                if(zahlen[leser] == '-')
-                {
-                    vorzeichen = -1;
-                }
-                if (Char.IsNumber(zahlen[leser]) && vorkomma == 1)
-                {
-                    zahl *= 10;
-                    zahl += zahlen[leser];
-                }
-                if (zahlen[leser] == '.')
-                {
-                    vorkomma = 0;
-                }
-                if (Char.IsNumber(zahlen[leser]) && vorkomma == 0)
-                {
-                    zahl += zahlen[leser]/stelle;
-                    stelle *= 10;
-                }
-                if(zahlen[leser] == ',')
-                {
-                    stelle = 10;
-                    vorkomma = 1;
-                    summe += zahl * vorzeichen;
-                    zahl = 0;
-                    vorzeichen = 1;
-                }
-                leser++;
+                summe += Double.Parse(str);
             }
-            Console.WriteLine(summe);
+            Console.WriteLine(summe/2);
         }
     }
 }
